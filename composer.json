@@ -13,7 +13,8 @@
 		"karllhughes/j2c_jobs": "2.*",
 		"karllhughes/juju_jobs": "2.*",
 		"karllhughes/simplyhired_jobs": "2.*",
-		"karllhughes/jobs-objects": "dev-master"
+		"karllhughes/jobs-objects": "dev-master",
+		"illuminate/html": "5.0.*@dev"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.0",

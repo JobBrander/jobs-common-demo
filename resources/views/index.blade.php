@@ -7,9 +7,16 @@
 			<h1>Job Search API Library Demo</h1>
 			<h3>More info at </h3>
 			<div class="">
-				<form method="post">
-					<input type="submit" />
-				</form>
+				{!! Form::open(array('url' => '/',
+					'method' => 'post'
+				)) !!}
+					<p><label for="keyword">Keyword</label>
+						{!! Form::text('keyword', '', [
+						'class' => 'form-control',
+						'placeholder' => 'Enter Your Job Search'
+					]) !!}</p>
+					<p>{!! Form::submit("Let's Go!", ['class' => 'form-control']) !!}</p>
+				{!! Form::close() !!}
 			</div>
 		</div>
 	</div>

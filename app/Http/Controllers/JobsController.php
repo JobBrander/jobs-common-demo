@@ -1,6 +1,8 @@
 <?php namespace App\Http\Controllers;
 
 use App\Activities\JobsActivities;
+use Illuminate\Support\Facades\Input;
+use Request;
 
 class JobsController extends Controller {
 
@@ -16,8 +18,15 @@ class JobsController extends Controller {
 
 	public function search()
 	{
+		$input = Input::only(
+            'keyword',
+            'api',
+            'location',
+            'page',
+            'count'
+        );
 		$jobs = $this->activities->getJobs($input);
-		return view('search');
+		return view('search')->with(['jobs' => $jobs]);
 	}
 
 }

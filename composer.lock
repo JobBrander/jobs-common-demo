@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2a9a457caa6b4dc7b52c0fa371566b2f",
+    "hash": "bc2aaa9cbe4760d282e27131c496d8be",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -615,16 +615,16 @@
         },
         {
             "name": "karllhughes/careerbuilder_jobs",
-            "version": "2.0.0",
+            "version": "2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/karllhughes/career-builder-jobs-api-php-client.git",
-                "reference": "0ece7c8e8bd51ca37893b0794a2789b344c7dcaa"
+                "reference": "6c81f29c8fdce0aae608923cb0b13d1c971488ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/karllhughes/career-builder-jobs-api-php-client/zipball/0ece7c8e8bd51ca37893b0794a2789b344c7dcaa",
-                "reference": "0ece7c8e8bd51ca37893b0794a2789b344c7dcaa",
+                "url": "https://api.github.com/repos/karllhughes/career-builder-jobs-api-php-client/zipball/6c81f29c8fdce0aae608923cb0b13d1c971488ce",
+                "reference": "6c81f29c8fdce0aae608923cb0b13d1c971488ce",
                 "shasum": ""
             },
             "require": {
@@ -663,20 +663,20 @@
                 "careerbuilder",
                 "jobs"
             ],
-            "time": "2015-03-19 16:49:14"
+            "time": "2015-03-26 18:46:56"
         },
         {
             "name": "karllhughes/dice_jobs",
-            "version": "2.0.0",
+            "version": "2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/karllhughes/dice-jobs-api-php-client.git",
-                "reference": "477855fe4e7fba55fcef29b78d7abefeb8987b1f"
+                "reference": "0837eeebfdd975b8e910e16db7ae9243f5fafda9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/karllhughes/dice-jobs-api-php-client/zipball/477855fe4e7fba55fcef29b78d7abefeb8987b1f",
-                "reference": "477855fe4e7fba55fcef29b78d7abefeb8987b1f",
+                "url": "https://api.github.com/repos/karllhughes/dice-jobs-api-php-client/zipball/0837eeebfdd975b8e910e16db7ae9243f5fafda9",
+                "reference": "0837eeebfdd975b8e910e16db7ae9243f5fafda9",
                 "shasum": ""
             },
             "require": {
@@ -715,11 +715,11 @@
                 "dice",
                 "jobs"
             ],
-            "time": "2015-03-18 20:06:56"
+            "time": "2015-03-18 21:57:24"
         },
         {
             "name": "karllhughes/govt_jobs",
-            "version": "2.0.0",
+            "version": "2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/karllhughes/govt-jobs-api-php-client.git",
@@ -771,16 +771,16 @@
         },
         {
             "name": "karllhughes/indeed_jobs",
-            "version": "2.0.0",
+            "version": "2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/karllhughes/indeed-jobs-api-php-client.git",
-                "reference": "1de23123def6b879a5853929e45762763e5e9070"
+                "reference": "aa474cc79f9e2fafbdab826f96f1de9a49de2e34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/karllhughes/indeed-jobs-api-php-client/zipball/1de23123def6b879a5853929e45762763e5e9070",
-                "reference": "1de23123def6b879a5853929e45762763e5e9070",
+                "url": "https://api.github.com/repos/karllhughes/indeed-jobs-api-php-client/zipball/aa474cc79f9e2fafbdab826f96f1de9a49de2e34",
+                "reference": "aa474cc79f9e2fafbdab826f96f1de9a49de2e34",
                 "shasum": ""
             },
             "require": {
@@ -819,24 +819,25 @@
                 "indeed",
                 "jobs"
             ],
-            "time": "2015-03-10 21:48:09"
+            "time": "2015-03-19 14:33:12"
         },
         {
             "name": "karllhughes/j2c_jobs",
-            "version": "2.0.0",
+            "version": "2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/karllhughes/jobs2careers-jobs-api-php-client.git",
-                "reference": "50848c6cae0f6da8d152cf421d950a601dc0092d"
+                "reference": "be4242b5c6af2cfbdd6ae21cf4e3e76db20552d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/karllhughes/jobs2careers-jobs-api-php-client/zipball/50848c6cae0f6da8d152cf421d950a601dc0092d",
-                "reference": "50848c6cae0f6da8d152cf421d950a601dc0092d",
+                "url": "https://api.github.com/repos/karllhughes/jobs2careers-jobs-api-php-client/zipball/be4242b5c6af2cfbdd6ae21cf4e3e76db20552d1",
+                "reference": "be4242b5c6af2cfbdd6ae21cf4e3e76db20552d1",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": ">=5.0",
+                "karllhughes/jobs-objects": "dev-master",
                 "php": ">=5.2.1"
             },
             "require-dev": {
@@ -870,7 +871,7 @@
                 "jobs",
                 "jobs2careers"
             ],
-            "time": "2015-02-19 18:41:38"
+            "time": "2015-03-21 18:54:06"
         },
         {
             "name": "karllhughes/jobs-objects",
@@ -922,7 +923,7 @@
         },
         {
             "name": "karllhughes/juju_jobs",
-            "version": "2.0.0",
+            "version": "2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/karllhughes/juju-jobs-api-php-client.git",
@@ -3480,6 +3481,13 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "karllhughes/careerbuilder_jobs": 20,
+        "karllhughes/dice_jobs": 20,
+        "karllhughes/govt_jobs": 20,
+        "karllhughes/indeed_jobs": 20,
+        "karllhughes/j2c_jobs": 20,
+        "karllhughes/juju_jobs": 20,
+        "karllhughes/simplyhired_jobs": 20,
         "karllhughes/jobs-objects": 20,
         "illuminate/html": 20
     },

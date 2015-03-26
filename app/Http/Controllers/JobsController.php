@@ -1,7 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use App\Activities\JobsActivities;
-use Illuminate\Support\Facades\Input;
+use App\Filters\InputFilters;
 use Request;
 
 class JobsController extends Controller {
@@ -13,18 +13,13 @@ class JobsController extends Controller {
 
 	public function index()
 	{
-		return view('index');
+		$apis = \Config::get('enums.api_names');
+		return view('index')->with(['apis' => $apis]);
 	}
 
 	public function search()
 	{
-		$input = Input::only(
-            'keyword',
-            'api',
-            'location',
-            'page',
-            'count'
-        );
+		$input = InputFilters::getJobSearchInput();
 		$jobs = $this->activities->getJobs($input);
 		return view('search')->with(['jobs' => $jobs]);
 	}

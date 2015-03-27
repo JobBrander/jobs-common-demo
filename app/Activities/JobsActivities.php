@@ -2,6 +2,8 @@
 
 class JobsActivities
 {
+    private $client;
+
     public function getJobs($input = [])
     {
         $jobs = [];
@@ -10,12 +12,13 @@ class JobsActivities
             $config = \Config::get('enums.apis.'.$input['api'].'.config');
             try {
                 // Load up the selected client
-                $client = $provider::createClient($config);
+                $this->client = $provider::createClient($config);
+
                 // Set query, location, page, and count
-                $client->setQuery($input['keyword']);
+                $this->setClientAttributes($input);
+
                 // Get jobs from them
-                //dd($client->getJobs()->all());
-                return $client->getJobs()->all();
+                return $this->client->getJobs()->all();
             } catch (Exception $e) {
                 dd($e);
             }
@@ -24,4 +27,21 @@ class JobsActivities
         return $jobs;
     }
 
+    private function setClientAttributes($input)
+    {
+        $this->client->setQuery($input['keyword']);
+
+        if (isset($input['city']) && $input['city']) {
+            $this->client->setCity($input['city']);
+        }
+        if (isset($input['state']) && $input['state']) {
+            $this->client->setState($input['state']);
+        }
+        if (isset($input['page']) && $input['page']) {
+            $this->client->setPage($input['page']);
+        }
+        if (isset($input['count']) && $input['count']) {
+            $this->client->setPage($input['count']);
+        }
+    }
 }

@@ -14,14 +14,22 @@ class JobsController extends Controller {
 	public function index()
 	{
 		$apis = \Config::get('enums.api_names');
-		return view('index')->with(['apis' => $apis]);
+		$states = \Config::get('enums.states');
+
+		return view('index')->with([
+			'apis' => $apis,
+			'states' => $states
+		]);
 	}
 
 	public function search()
 	{
 		$input = InputFilters::getJobSearchInput();
 		$jobs = $this->activities->getJobs($input);
-		return view('search')->with(['jobs' => $jobs]);
+
+		return view('search')->with([
+			'jobs' => $jobs
+		]);
 	}
 
 }

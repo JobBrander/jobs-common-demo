@@ -9,7 +9,8 @@ class InputFilters
         return Input::only(
             'keyword',
             'api',
-            'location',
+            'city',
+            'state',
             'page',
             'count'
         );

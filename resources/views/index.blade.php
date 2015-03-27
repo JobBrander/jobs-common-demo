@@ -11,14 +11,14 @@
 					{!! Form::open(array('url' => '/',
 						'method' => 'post'
 					)) !!}
+						<p><label for="api">API Client</label>
+							{!! Form::select('api', $apis, '', [
+							'class' => 'form-control'
+						]) !!}</p>
 						<p><label for="keyword">Keyword</label>
 							{!! Form::text('keyword', '', [
 							'class' => 'form-control',
 							'placeholder' => 'Enter Your Job Search'
-						]) !!}</p>
-						<p><label for="api">API Client</label>
-							{!! Form::select('api', $apis, '', [
-							'class' => 'form-control'
 						]) !!}</p>
 						<p>{!! Form::submit("Let's Go!", ['class' => 'form-control']) !!}</p>
 					{!! Form::close() !!}

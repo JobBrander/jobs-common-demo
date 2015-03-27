@@ -37,7 +37,7 @@ $apis = [
 		],
 	],
 	'simply' => [
-		'name' => 'Simply',
+		'name' => 'SimplyHired',
 		'config' => [
 			'key' => getenv('SIMPLYHIRED_KEY')
 		],

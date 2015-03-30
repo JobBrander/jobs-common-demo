@@ -7,6 +7,9 @@
 			<h1>Job Search API Library Demo</h1>
 			<p>Select a Job Search API, input a keyword, and click "Let's Go!" to
 				see their latest jobs.</p>
+			<p>To read more about this project, check out
+				<a href="http://www.karllhughes.com/2015/php-job-search-api-clients/" target="_blank"
+				>this blog post</a>.</p>
 				<div class="input">
 					{!! Form::open(array('url' => '/',
 						'method' => 'post'

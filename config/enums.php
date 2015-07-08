@@ -4,9 +4,14 @@ $apis = [
 	'careerbuilder' => [
 		'name' => 'Careerbuilder',
 		'config' => [
-			'key' => getenv('CAREERBUILDER_KEY')
+			'developerKey' => getenv('CAREERBUILDER_KEY')
 		],
 	],
+    'careercast' => [
+        'name' => 'Careercast',
+        'config' => [
+        ],
+    ],
 	'dice' => [
 		'name' => 'Dice',
 		'config' => [
@@ -20,26 +25,22 @@ $apis = [
 	'indeed' => [
 		'name' => 'Indeed',
 		'config' => [
-			'publisher_id' => getenv('INDEED_PUBLISHER_ID')
+            'publisherId' => getenv('INDEED_PUBLISHER_ID'),
+            'version' => 2,
+            'highlight' => 0,
 		],
 	],
 	'j2c' => [
-		'name' => 'J2c',
+		'name' => 'Jobs2Careers',
 		'config' => [
-			'id' => getenv('J2C_ID'),
-			'password' => getenv('J2C_PASSWORD')
+			'partnerId' => getenv('J2C_ID'),
+			'partnerPass' => getenv('J2C_PASSWORD')
 		],
 	],
-	'juju' => [
-		'name' => 'Juju',
-		'config' => [
-			'partner_id' => getenv('JUJU_PARTNER_ID')
-		],
-	],
-	'simply' => [
+	'simplyhired' => [
 		'name' => 'SimplyHired',
 		'config' => [
-			'key' => getenv('SIMPLYHIRED_KEY')
+			'developerKey' => getenv('SIMPLYHIRED_KEY')
 		],
 	],
 ];

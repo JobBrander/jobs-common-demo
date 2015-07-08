@@ -4,11 +4,11 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
-			<h1>Job Search API Library Demo</h1>
-			<p>Select a Job Search API, input a keyword, and click "Let's Go!" to
+			<h1>Job Board API Demo</h1>
+			<p>Select a Job Board API, input a keyword, and click "Let's Go!" to
 				see their latest jobs.</p>
 			<p>To read more about this project, check out
-				<a href="http://www.karllhughes.com/2015/php-job-search-api-clients/" target="_blank"
+				<a href="http://www.karllhughes.com/2015/job-board-api-1-release/" target="_blank"
 				>this blog post</a>.</p>
 				<div class="input">
 					{!! Form::open(array('url' => '/',

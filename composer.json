@@ -6,15 +6,15 @@
 	"type": "project",
 	"require": {
 		"laravel/framework": "5.0.*",
-		"karllhughes/careerbuilder_jobs": "2.*@dev",
-		"karllhughes/dice_jobs": "2.*@dev",
-		"karllhughes/govt_jobs": "2.*@dev",
-		"karllhughes/indeed_jobs": "2.*@dev",
-		"karllhughes/j2c_jobs": "2.*@dev",
-		"karllhughes/juju_jobs": "2.*@dev",
-		"karllhughes/simplyhired_jobs": "2.*@dev",
-		"karllhughes/jobs-objects": "dev-master",
-		"illuminate/html": "5.0.*@dev"
+		"illuminate/html": "5.0.*",
+        "jobbrander/jobs-indeed": "dev-master",
+        "jobbrander/jobs-govt": "dev-master",
+        "jobbrander/jobs-dice": "dev-master",
+        "jobbrander/jobs-simplyhired": "dev-master",
+        "jobbrander/jobs-careerbuilder": "dev-master",
+        "jobbrander/jobs-careercast": "dev-master",
+        "jobbrander/jobs-jobs2careers": "dev-master",
+        "jobbrander/jobs-common": "~1.0"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "~4.0",

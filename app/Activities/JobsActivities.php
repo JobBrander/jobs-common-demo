@@ -8,11 +8,11 @@ class JobsActivities
     {
         $jobs = [];
         if ($input['api'] && $input['keyword']) {
-            $provider = ucfirst($input['api']).'Jobs\Provider';
+            $provider = 'JobBrander\\Jobs\\Client\\Providers\\'.ucfirst($input['api']);
             $config = \Config::get('enums.apis.'.$input['api'].'.config');
             try {
                 // Load up the selected client
-                $this->client = $provider::createClient($config);
+                $this->client = new $provider($config);
 
                 // Set query, location, page, and count
                 $this->setClientAttributes($input);
@@ -29,7 +29,7 @@ class JobsActivities
 
     private function setClientAttributes($input)
     {
-        $this->client->setQuery($input['keyword']);
+        $this->client->setKeyword($input['keyword']);
 
         if (isset($input['city']) && $input['city']) {
             $this->client->setCity($input['city']);
@@ -41,7 +41,7 @@ class JobsActivities
             $this->client->setPage($input['page']);
         }
         if (isset($input['count']) && $input['count']) {
-            $this->client->setPage($input['count']);
+            $this->client->setCount($input['count']);
         }
     }
 }

@@ -687,12 +687,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JobBrander/jobs-careercast.git",
-                "reference": "b2bd66e6f927470ab01eae97ece1cccc70009f5f"
+                "reference": "e1675d1e63b37bd9f7ebaeba87e718a660834a4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JobBrander/jobs-careercast/zipball/b2bd66e6f927470ab01eae97ece1cccc70009f5f",
-                "reference": "b2bd66e6f927470ab01eae97ece1cccc70009f5f",
+                "url": "https://api.github.com/repos/JobBrander/jobs-careercast/zipball/e1675d1e63b37bd9f7ebaeba87e718a660834a4c",
+                "reference": "e1675d1e63b37bd9f7ebaeba87e718a660834a4c",
                 "shasum": ""
             },
             "require": {
@@ -735,7 +735,7 @@
                 "object",
                 "rss client"
             ],
-            "time": "2015-07-25 19:28:14"
+            "time": "2015-07-25 19:31:12"
         },
         {
             "name": "jobbrander/jobs-common",
@@ -958,12 +958,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JobBrander/jobs-jobs2careers.git",
-                "reference": "82e525ded4c3df7089784b86b9ec08770aa5f536"
+                "reference": "c58ab8e3bec1e850c39f809d8908d3378a2f59ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JobBrander/jobs-jobs2careers/zipball/82e525ded4c3df7089784b86b9ec08770aa5f536",
-                "reference": "82e525ded4c3df7089784b86b9ec08770aa5f536",
+                "url": "https://api.github.com/repos/JobBrander/jobs-jobs2careers/zipball/c58ab8e3bec1e850c39f809d8908d3378a2f59ce",
+                "reference": "c58ab8e3bec1e850c39f809d8908d3378a2f59ce",
                 "shasum": ""
             },
             "require": {
@@ -1000,7 +1000,7 @@
                 "jobs2careers",
                 "object"
             ],
-            "time": "2015-07-04 16:18:18"
+            "time": "2015-07-25 21:50:31"
         },
         {
             "name": "jobbrander/jobs-simplyhired",
@@ -1008,12 +1008,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JobBrander/jobs-simplyhired.git",
-                "reference": "0af4c441689aaea7f9480c19463d886ad2d34333"
+                "reference": "054c5fae72049e174ad3db3fbb201cdf33b0260f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JobBrander/jobs-simplyhired/zipball/0af4c441689aaea7f9480c19463d886ad2d34333",
-                "reference": "0af4c441689aaea7f9480c19463d886ad2d34333",
+                "url": "https://api.github.com/repos/JobBrander/jobs-simplyhired/zipball/054c5fae72049e174ad3db3fbb201cdf33b0260f",
+                "reference": "054c5fae72049e174ad3db3fbb201cdf33b0260f",
                 "shasum": ""
             },
             "require": {
@@ -1050,7 +1050,7 @@
                 "object",
                 "simplyhired"
             ],
-            "time": "2015-07-04 17:17:14"
+            "time": "2015-07-25 21:30:50"
         },
         {
             "name": "laravel/framework",

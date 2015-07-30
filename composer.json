@@ -14,6 +14,7 @@
         "jobbrander/jobs-careerbuilder": "dev-master",
         "jobbrander/jobs-careercast": "dev-master",
         "jobbrander/jobs-jobs2careers": "dev-master",
+        "jobbrander/jobs-juju": "dev-master",
         "jobbrander/jobs-common": "~1.0"
 	},
 	"require-dev": {

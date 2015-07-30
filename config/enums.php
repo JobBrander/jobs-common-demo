@@ -37,6 +37,12 @@ $apis = [
 			'partnerPass' => getenv('J2C_PASSWORD')
 		],
 	],
+    'juju' => [
+        'name' => 'Juju',
+        'config' => [
+            'partnerId' => '3f6eacc5a03e03b4287c1a0b43ece6bb',
+        ],
+    ],
 	'simplyhired' => [
 		'name' => 'SimplyHired',
 		'config' => [

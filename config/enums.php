@@ -49,6 +49,12 @@ $apis = [
 			'developerKey' => getenv('SIMPLYHIRED_KEY')
 		],
 	],
+    'ziprecruiter' => [
+        'name' => 'Ziprecruiter',
+        'config' => [
+            'apiKey' => getenv('ZIPRECRUITER_KEY')
+        ],
+    ],
 ];
 
 $api_names = [];

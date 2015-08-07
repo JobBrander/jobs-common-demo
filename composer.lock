@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6a70a2cdd420f7632e454441827bf62c",
+    "hash": "ce27568aa5dda6ca916ef56b59e712f4",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -739,16 +739,16 @@
         },
         {
             "name": "jobbrander/jobs-common",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JobBrander/jobs-common.git",
-                "reference": "283859734fececdb53e7ff29064476e32aa41f12"
+                "reference": "d4c78cb95ac5de907c9fcd8c8fc376d314ffdf3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JobBrander/jobs-common/zipball/283859734fececdb53e7ff29064476e32aa41f12",
-                "reference": "283859734fececdb53e7ff29064476e32aa41f12",
+                "url": "https://api.github.com/repos/JobBrander/jobs-common/zipball/d4c78cb95ac5de907c9fcd8c8fc376d314ffdf3c",
+                "reference": "d4c78cb95ac5de907c9fcd8c8fc376d314ffdf3c",
                 "shasum": ""
             },
             "require": {
@@ -791,7 +791,7 @@
                 "jobs",
                 "object"
             ],
-            "time": "2015-07-27 18:46:21"
+            "time": "2015-08-05 22:28:59"
         },
         {
             "name": "jobbrander/jobs-dice",
@@ -909,12 +909,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JobBrander/jobs-indeed.git",
-                "reference": "a602671210ee85a99572f65aa950048cef984f10"
+                "reference": "03963c386c57248f5eb9d3f0ee33cf39c0747656"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JobBrander/jobs-indeed/zipball/a602671210ee85a99572f65aa950048cef984f10",
-                "reference": "a602671210ee85a99572f65aa950048cef984f10",
+                "url": "https://api.github.com/repos/JobBrander/jobs-indeed/zipball/03963c386c57248f5eb9d3f0ee33cf39c0747656",
+                "reference": "03963c386c57248f5eb9d3f0ee33cf39c0747656",
                 "shasum": ""
             },
             "require": {
@@ -952,7 +952,7 @@
                 "jobs",
                 "object"
             ],
-            "time": "2015-07-27 19:16:18"
+            "time": "2015-08-06 00:35:37"
         },
         {
             "name": "jobbrander/jobs-jobs2careers",
@@ -1010,12 +1010,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JobBrander/jobs-juju.git",
-                "reference": "70572902dfc94fcea4fdc6eb085ddb7db1c8cb39"
+                "reference": "3a958e1999bbc3b6382b4b9e157333814fe633b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JobBrander/jobs-juju/zipball/70572902dfc94fcea4fdc6eb085ddb7db1c8cb39",
-                "reference": "70572902dfc94fcea4fdc6eb085ddb7db1c8cb39",
+                "url": "https://api.github.com/repos/JobBrander/jobs-juju/zipball/3a958e1999bbc3b6382b4b9e157333814fe633b6",
+                "reference": "3a958e1999bbc3b6382b4b9e157333814fe633b6",
                 "shasum": ""
             },
             "require": {
@@ -1052,7 +1052,7 @@
                 "juju",
                 "object"
             ],
-            "time": "2015-07-30 15:05:39"
+            "time": "2015-07-30 15:11:06"
         },
         {
             "name": "jobbrander/jobs-simplyhired",
@@ -1103,6 +1103,56 @@
                 "simplyhired"
             ],
             "time": "2015-07-25 21:30:50"
+        },
+        {
+            "name": "jobbrander/jobs-ziprecruiter",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JobBrander/jobs-ziprecruiter.git",
+                "reference": "039302347fc1fbc51c55b8d301a562cf6814b845"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JobBrander/jobs-ziprecruiter/zipball/039302347fc1fbc51c55b8d301a562cf6814b845",
+                "reference": "039302347fc1fbc51c55b8d301a562cf6814b845",
+                "shasum": ""
+            },
+            "require": {
+                "jobbrander/jobs-common": "~1.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JobBrander\\Jobs\\Client\\Providers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with ZipRecruiter Jobs API.",
+            "homepage": "https://github.com/JobBrander/jobs-ziprecruiter",
+            "keywords": [
+                "api client",
+                "indeed",
+                "jobs",
+                "object"
+            ],
+            "time": "2015-08-07 14:03:12"
         },
         {
             "name": "laravel/framework",
@@ -1855,7 +1905,7 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.7.2",
+            "version": "v2.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
@@ -1913,7 +1963,7 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v2.7.2",
+            "version": "v2.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
@@ -2769,16 +2819,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "2.1.9",
+            "version": "2.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "5bd48b86cd282da411bb80baac1398ce3fefac41"
+                "reference": "2d7c03c0e4e080901b8f33b2897b0577be18a13c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/5bd48b86cd282da411bb80baac1398ce3fefac41",
-                "reference": "5bd48b86cd282da411bb80baac1398ce3fefac41",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/2d7c03c0e4e080901b8f33b2897b0577be18a13c",
+                "reference": "2d7c03c0e4e080901b8f33b2897b0577be18a13c",
                 "shasum": ""
             },
             "require": {
@@ -2786,7 +2836,7 @@
                 "phpunit/php-file-iterator": "~1.3",
                 "phpunit/php-text-template": "~1.2",
                 "phpunit/php-token-stream": "~1.3",
-                "sebastian/environment": "~1.0",
+                "sebastian/environment": "^1.3.2",
                 "sebastian/version": "~1.0"
             },
             "require-dev": {
@@ -2801,7 +2851,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev"
+                    "dev-master": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -2827,7 +2877,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-07-26 12:54:47"
+            "time": "2015-08-04 03:42:39"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -3009,16 +3059,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.7.7",
+            "version": "4.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "9b97f9d807b862c2de2a36e86690000801c85724"
+                "reference": "748c6963c0a8c983fa69ee8884c885d0e98209bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/9b97f9d807b862c2de2a36e86690000801c85724",
-                "reference": "9b97f9d807b862c2de2a36e86690000801c85724",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/748c6963c0a8c983fa69ee8884c885d0e98209bf",
+                "reference": "748c6963c0a8c983fa69ee8884c885d0e98209bf",
                 "shasum": ""
             },
             "require": {
@@ -3028,7 +3078,7 @@
                 "ext-reflection": "*",
                 "ext-spl": "*",
                 "php": ">=5.3.3",
-                "phpspec/prophecy": "~1.3,>=1.3.1",
+                "phpspec/prophecy": "^1.3.1",
                 "phpunit/php-code-coverage": "~2.1",
                 "phpunit/php-file-iterator": "~1.4",
                 "phpunit/php-text-template": "~1.2",
@@ -3036,7 +3086,7 @@
                 "phpunit/phpunit-mock-objects": "~2.3",
                 "sebastian/comparator": "~1.1",
                 "sebastian/diff": "~1.2",
-                "sebastian/environment": "~1.2",
+                "sebastian/environment": "~1.3",
                 "sebastian/exporter": "~1.2",
                 "sebastian/global-state": "~1.0",
                 "sebastian/version": "~1.0",
@@ -3051,7 +3101,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.7.x-dev"
+                    "dev-master": "4.8.x-dev"
                 }
             },
             "autoload": {
@@ -3077,7 +3127,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-07-13 11:28:34"
+            "time": "2015-08-07 12:56:50"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -3253,16 +3303,16 @@
         },
         {
             "name": "sebastian/environment",
-            "version": "1.3.0",
+            "version": "1.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "4fe0a44cddd8cc19583a024bdc7374eb2fef0b87"
+                "reference": "6324c907ce7a52478eeeaede764f48733ef5ae44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/4fe0a44cddd8cc19583a024bdc7374eb2fef0b87",
-                "reference": "4fe0a44cddd8cc19583a024bdc7374eb2fef0b87",
+                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/6324c907ce7a52478eeeaede764f48733ef5ae44",
+                "reference": "6324c907ce7a52478eeeaede764f48733ef5ae44",
                 "shasum": ""
             },
             "require": {
@@ -3299,7 +3349,7 @@
                 "environment",
                 "hhvm"
             ],
-            "time": "2015-07-26 06:42:57"
+            "time": "2015-08-03 06:14:51"
         },
         {
             "name": "sebastian/exporter",
@@ -3508,16 +3558,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.7.2",
+            "version": "v2.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "4bfbe0ed3909bfddd75b70c094391ec1f142f860"
+                "reference": "71340e996171474a53f3d29111d046be4ad8a0ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/4bfbe0ed3909bfddd75b70c094391ec1f142f860",
-                "reference": "4bfbe0ed3909bfddd75b70c094391ec1f142f860",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/71340e996171474a53f3d29111d046be4ad8a0ff",
+                "reference": "71340e996171474a53f3d29111d046be4ad8a0ff",
                 "shasum": ""
             },
             "require": {
@@ -3553,7 +3603,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-01 11:25:50"
+            "time": "2015-07-28 14:07:07"
         }
     ],
     "aliases": [],
@@ -3566,7 +3616,8 @@
         "jobbrander/jobs-careerbuilder": 20,
         "jobbrander/jobs-careercast": 20,
         "jobbrander/jobs-jobs2careers": 20,
-        "jobbrander/jobs-juju": 20
+        "jobbrander/jobs-juju": 20,
+        "jobbrander/jobs-ziprecruiter": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

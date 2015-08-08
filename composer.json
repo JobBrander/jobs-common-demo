@@ -16,6 +16,7 @@
         "jobbrander/jobs-jobs2careers": "dev-master",
         "jobbrander/jobs-juju": "dev-master",
         "jobbrander/jobs-ziprecruiter": "dev-master",
+        "jobbrander/jobs-authenticjobs": "dev-master",
         "jobbrander/jobs-common": "~1.0"
 	},
 	"require-dev": {

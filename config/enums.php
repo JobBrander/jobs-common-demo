@@ -55,6 +55,12 @@ $apis = [
             'apiKey' => getenv('ZIPRECRUITER_KEY')
         ],
     ],
+    'authenticjobs' => [
+        'name' => 'AuthenticJobs',
+        'config' => [
+            'key' => getenv('AUTHENTICJOBS_KEY')
+        ],
+    ],
 ];
 
 $api_names = [];

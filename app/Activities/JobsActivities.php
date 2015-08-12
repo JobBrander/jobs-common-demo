@@ -8,11 +8,11 @@ class JobsActivities
     {
         $jobs = [];
         if ($input['api'] && $input['keyword']) {
-            $provider = 'JobBrander\\Jobs\\Client\\Providers\\'.ucfirst($input['api']);
-            $config = \Config::get('enums.apis.'.$input['api'].'.config');
+            $config = \Config::get('enums.apis.'.$input['api']);
+            $provider = 'JobBrander\\Jobs\\Client\\Providers\\'.$config['name'];
             try {
                 // Load up the selected client
-                $this->client = new $provider($config);
+                $this->client = new $provider($config['config']);
 
                 // Set query, location, page, and count
                 $this->setClientAttributes($input);

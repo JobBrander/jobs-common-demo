@@ -1,6 +1,12 @@
 <?php
 
 $apis = [
+    'authenticjobs' => [
+        'name' => 'AuthenticJobs',
+        'config' => [
+            'key' => getenv('AUTHENTICJOBS_KEY')
+        ],
+    ],
 	'careerbuilder' => [
 		'name' => 'Careerbuilder',
 		'config' => [
@@ -12,11 +18,22 @@ $apis = [
         'config' => [
         ],
     ],
+    'elance' => [
+        'name' => 'Elance',
+        'config' => [
+            'token' => getenv('ELANCE_TOKEN')
+        ],
+    ],
 	'dice' => [
 		'name' => 'Dice',
 		'config' => [
 		],
 	],
+    'github' => [
+        'name' => 'Github',
+        'config' => [
+        ],
+    ],
 	'govt' => [
 		'name' => 'Govt',
 		'config' => [
@@ -53,12 +70,6 @@ $apis = [
         'name' => 'Ziprecruiter',
         'config' => [
             'apiKey' => getenv('ZIPRECRUITER_KEY')
-        ],
-    ],
-    'authenticjobs' => [
-        'name' => 'AuthenticJobs',
-        'config' => [
-            'key' => getenv('AUTHENTICJOBS_KEY')
         ],
     ],
 ];

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ba9a3fe75b11b809dbbbb571d4ba15c2",
+    "hash": "0c9b0ec7d7301e0e59b030963623f5fe",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -632,12 +632,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JobBrander/jobs-authenticjobs.git",
-                "reference": "f974ec688696341379eda73000d473660d1a68c8"
+                "reference": "169ea7a7606477a42c6573d3aa330261c00881be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JobBrander/jobs-authenticjobs/zipball/f974ec688696341379eda73000d473660d1a68c8",
-                "reference": "f974ec688696341379eda73000d473660d1a68c8",
+                "url": "https://api.github.com/repos/JobBrander/jobs-authenticjobs/zipball/169ea7a7606477a42c6573d3aa330261c00881be",
+                "reference": "169ea7a7606477a42c6573d3aa330261c00881be",
                 "shasum": ""
             },
             "require": {
@@ -675,7 +675,7 @@
                 "jobs",
                 "object"
             ],
-            "time": "2015-08-08 11:48:45"
+            "time": "2015-08-10 17:29:10"
         },
         {
             "name": "jobbrander/jobs-careerbuilder",
@@ -683,16 +683,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JobBrander/jobs-careerbuilder.git",
-                "reference": "2f4b58b0e10d4d741d592c13af0f1b566c7835c2"
+                "reference": "63b7c7bc86ce9beea00ab259ccf267cd08d0b986"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JobBrander/jobs-careerbuilder/zipball/2f4b58b0e10d4d741d592c13af0f1b566c7835c2",
-                "reference": "2f4b58b0e10d4d741d592c13af0f1b566c7835c2",
+                "url": "https://api.github.com/repos/JobBrander/jobs-careerbuilder/zipball/63b7c7bc86ce9beea00ab259ccf267cd08d0b986",
+                "reference": "63b7c7bc86ce9beea00ab259ccf267cd08d0b986",
                 "shasum": ""
             },
             "require": {
-                "jobbrander/jobs-common": "~1.0",
+                "jobbrander/jobs-common": "~1.0.3",
                 "php": ">=5.5.0"
             },
             "require-dev": {
@@ -730,7 +730,7 @@
                 "jobs",
                 "object"
             ],
-            "time": "2015-07-25 17:03:18"
+            "time": "2015-08-12 18:02:43"
         },
         {
             "name": "jobbrander/jobs-careercast",
@@ -738,16 +738,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JobBrander/jobs-careercast.git",
-                "reference": "e1675d1e63b37bd9f7ebaeba87e718a660834a4c"
+                "reference": "798fefbeff7968765d98f357722f26d9d9829389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JobBrander/jobs-careercast/zipball/e1675d1e63b37bd9f7ebaeba87e718a660834a4c",
-                "reference": "e1675d1e63b37bd9f7ebaeba87e718a660834a4c",
+                "url": "https://api.github.com/repos/JobBrander/jobs-careercast/zipball/798fefbeff7968765d98f357722f26d9d9829389",
+                "reference": "798fefbeff7968765d98f357722f26d9d9829389",
                 "shasum": ""
             },
             "require": {
-                "jobbrander/jobs-common": "~1.0",
+                "jobbrander/jobs-common": "~1.0.3",
                 "php": ">=5.5.0"
             },
             "require-dev": {
@@ -786,7 +786,7 @@
                 "object",
                 "rss client"
             ],
-            "time": "2015-07-25 19:31:12"
+            "time": "2015-08-12 18:33:07"
         },
         {
             "name": "jobbrander/jobs-common",
@@ -850,16 +850,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JobBrander/jobs-dice.git",
-                "reference": "581bd825d949c9f3f52258a0e85c8851fb85bf0a"
+                "reference": "e825f2a89871e98e94a53c6c5e49cc82bfb090a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JobBrander/jobs-dice/zipball/581bd825d949c9f3f52258a0e85c8851fb85bf0a",
-                "reference": "581bd825d949c9f3f52258a0e85c8851fb85bf0a",
+                "url": "https://api.github.com/repos/JobBrander/jobs-dice/zipball/e825f2a89871e98e94a53c6c5e49cc82bfb090a3",
+                "reference": "e825f2a89871e98e94a53c6c5e49cc82bfb090a3",
                 "shasum": ""
             },
             "require": {
-                "jobbrander/jobs-common": "~1.0",
+                "jobbrander/jobs-common": "~1.0.3",
                 "php": ">=5.5.0"
             },
             "require-dev": {
@@ -897,7 +897,109 @@
                 "jobs",
                 "object"
             ],
-            "time": "2015-07-25 17:23:40"
+            "time": "2015-08-12 18:45:42"
+        },
+        {
+            "name": "jobbrander/jobs-elance",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JobBrander/jobs-elance.git",
+                "reference": "5815f06ef004eedfb8933c62f378b05d406a911b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JobBrander/jobs-elance/zipball/5815f06ef004eedfb8933c62f378b05d406a911b",
+                "reference": "5815f06ef004eedfb8933c62f378b05d406a911b",
+                "shasum": ""
+            },
+            "require": {
+                "jobbrander/jobs-common": "~1.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JobBrander\\Jobs\\Client\\Providers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Steven Maguire",
+                    "email": "stevenmaguire@gmail.com",
+                    "homepage": "https://github.com/stevenmaguire"
+                }
+            ],
+            "description": "Making it simple to integrate your application with Elance API.",
+            "homepage": "https://github.com/JobBrander/jobs-elance",
+            "keywords": [
+                "api client",
+                "elance",
+                "jobs",
+                "object"
+            ],
+            "time": "2015-08-10 20:22:22"
+        },
+        {
+            "name": "jobbrander/jobs-github",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JobBrander/jobs-github.git",
+                "reference": "ffba47163db96fad5536c65224e21fd2459812e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JobBrander/jobs-github/zipball/ffba47163db96fad5536c65224e21fd2459812e6",
+                "reference": "ffba47163db96fad5536c65224e21fd2459812e6",
+                "shasum": ""
+            },
+            "require": {
+                "jobbrander/jobs-common": "~1.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JobBrander\\Jobs\\Client\\Providers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Steven Maguire",
+                    "email": "stevenmaguire@gmail.com",
+                    "homepage": "https://github.com/stevenmaguire"
+                }
+            ],
+            "description": "Making it simple to integrate your application with Github Jobs API.",
+            "homepage": "https://github.com/JobBrander/jobs-github",
+            "keywords": [
+                "api client",
+                "github",
+                "jobs",
+                "object"
+            ],
+            "time": "2015-08-12 17:13:47"
         },
         {
             "name": "jobbrander/jobs-govt",
@@ -1414,16 +1516,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.15.0",
+            "version": "1.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "dc5150cc608f2334c72c3b6a553ec9668a4156b0"
+                "reference": "c0c0b4bee3aabce7182876b0d912ef2595563db7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/dc5150cc608f2334c72c3b6a553ec9668a4156b0",
-                "reference": "dc5150cc608f2334c72c3b6a553ec9668a4156b0",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/c0c0b4bee3aabce7182876b0d912ef2595563db7",
+                "reference": "c0c0b4bee3aabce7182876b0d912ef2595563db7",
                 "shasum": ""
             },
             "require": {
@@ -1460,7 +1562,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.15.x-dev"
+                    "dev-master": "1.16.x-dev"
                 }
             },
             "autoload": {
@@ -1486,7 +1588,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-07-12 13:54:09"
+            "time": "2015-08-09 17:44:44"
         },
         {
             "name": "mtdowling/cron-expression",
@@ -3110,16 +3212,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.2",
+            "version": "4.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "748c6963c0a8c983fa69ee8884c885d0e98209bf"
+                "reference": "fd3050e26e3105f416d74c4d33aea659b406c59d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/748c6963c0a8c983fa69ee8884c885d0e98209bf",
-                "reference": "748c6963c0a8c983fa69ee8884c885d0e98209bf",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/fd3050e26e3105f416d74c4d33aea659b406c59d",
+                "reference": "fd3050e26e3105f416d74c4d33aea659b406c59d",
                 "shasum": ""
             },
             "require": {
@@ -3178,7 +3280,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-08-07 12:56:50"
+            "time": "2015-08-10 09:16:56"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -3660,16 +3762,18 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "jobbrander/jobs-indeed": 20,
-        "jobbrander/jobs-govt": 20,
-        "jobbrander/jobs-dice": 20,
-        "jobbrander/jobs-simplyhired": 20,
+        "jobbrander/jobs-authenticjobs": 20,
         "jobbrander/jobs-careerbuilder": 20,
         "jobbrander/jobs-careercast": 20,
+        "jobbrander/jobs-dice": 20,
+        "jobbrander/jobs-elance": 20,
+        "jobbrander/jobs-github": 20,
+        "jobbrander/jobs-govt": 20,
+        "jobbrander/jobs-indeed": 20,
         "jobbrander/jobs-jobs2careers": 20,
         "jobbrander/jobs-juju": 20,
-        "jobbrander/jobs-ziprecruiter": 20,
-        "jobbrander/jobs-authenticjobs": 20
+        "jobbrander/jobs-simplyhired": 20,
+        "jobbrander/jobs-ziprecruiter": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

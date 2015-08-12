@@ -31,10 +31,10 @@ class JobsActivities
     {
         $this->client->setKeyword($input['keyword']);
 
-        if (isset($input['city']) && $input['city']) {
+        if (isset($input['city']) && $input['city'] && method_exists($this->client, 'setCity')) {
             $this->client->setCity($input['city']);
         }
-        if (isset($input['state']) && $input['state']) {
+        if (isset($input['state']) && $input['state'] && method_exists($this->client, 'setState')) {
             $this->client->setState($input['state']);
         }
         if (isset($input['page']) && $input['page']) {

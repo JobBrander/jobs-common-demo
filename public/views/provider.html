@@ -1,13 +1,28 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="row">
-  <div class="large-12 columns">
-      <h3>
-          Provider: {{ name }}
-      </h3>
-      <table>
-          <th></th>
-      </table>
-  </div>
+    <div class="medium-10 medium-offset-1 columns">
+        <p>Provider: {{ provider }}</p>
+        <p>Repository Link: {{ repository }}</p>
+        
+        <h4 id="code">Code:</h4>
+        <script src="http://gist-it.appspot.com/http://github.com/{{ code_path }}"></script>
+
+        <h4 id="results">Results</h4>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Company</th>
+                <th>Link</th>
+            </tr>
+            {% for result in results %}
+            <tr>
+                <td>{{ result['title'] }}</td>
+                <td>{{ result['company'] }}</td>
+                <td><a href="{{ result['url'] }}" target="_blank">{{ result['url'] }}</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
 </div>
 {% endblock %}

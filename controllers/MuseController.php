@@ -2,18 +2,22 @@
 
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
+use \Slim\Container;
 
 class MuseController
 {
-    public function __construct($container)
+    public function __construct(Container $container)
     {
         $this->container = $container;
     }
 
     public function index(Request $request, Response $response)
     {
-        // Get env to get .env variables
-        echo getenv('XXX'); exit;
-        return $response->getBody()->write("Muse job listings");
+        $jobs = [];
+
+        return $this->container->view->render($response, 'provider.html', [
+            'name' => 'The Muse',
+            'jobs' => $jobs
+        ]);
     }
 }

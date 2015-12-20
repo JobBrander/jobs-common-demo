@@ -4,14 +4,28 @@ use \Dotenv\Dotenv;
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 use \Slim\App;
+use \Slim\Container;
+use \Slim\Views\Twig;
 
 require '../vendor/autoload.php';
 
-$app = new App;
-
 // Load .env file for local dev
-$app->getContainer()['dotenv'] = new Dotenv(__DIR__.'/../');
-$app->getContainer()['dotenv']->load();
+$container['dotenv'] = new Dotenv(__DIR__.'/../');
+$container['dotenv']->load();
+
+// Register Twig views
+$container['view'] = function ($c) {
+    $view = new Twig('./views', ['cache' => false]);
+    
+    $view->addExtension(new \Slim\Views\TwigExtension(
+        $c['router'],
+        $c['request']->getUri()
+    ));
+
+    return $view;
+};
+
+$app = new App($container);
 
 // Home route
 $app->get('/', '\Controllers\HomeController:index');

@@ -1,57 +1,52 @@
 <?php
-/**
- * Laravel - A PHP Framework For Web Artisans
- *
- * @package  Laravel
- * @author   Taylor Otwell <taylorotwell@gmail.com>
- */
 
-/*
-|--------------------------------------------------------------------------
-| Register The Auto Loader
-|--------------------------------------------------------------------------
-|
-| Composer provides a convenient, automatically generated class loader for
-| our application. We just need to utilize it! We'll simply require it
-| into the script here so that we don't have to worry about manual
-| loading any of our classes later on. It feels nice to relax.
-|
-*/
+use \Dotenv\Dotenv;
+use \Psr\Http\Message\ServerRequestInterface as Request;
+use \Psr\Http\Message\ResponseInterface as Response;
+use \Slim\App;
+use \Slim\Container;
+use \Slim\Views\Twig;
 
-require __DIR__.'/../bootstrap/autoload.php';
+require '../vendor/autoload.php';
 
-/*
-|--------------------------------------------------------------------------
-| Turn On The Lights
-|--------------------------------------------------------------------------
-|
-| We need to illuminate PHP development, so let us turn on the lights.
-| This bootstraps the framework and gets it ready for use, then it
-| will load up this application so that we can run it and send
-| the responses back to the browser and delight our users.
-|
-*/
+// Load .env file for local dev
+$container['dotenv'] = new Dotenv(__DIR__.'/../');
+$container['dotenv']->load();
 
-$app = require_once __DIR__.'/../bootstrap/app.php';
+// Register Twig views
+$container['view'] = function ($c) {
+    $view = new Twig('./views', ['cache' => false]);
+    
+    $view->addExtension(new \Slim\Views\TwigExtension(
+        $c['router'],
+        $c['request']->getUri()
+    ));
 
-/*
-|--------------------------------------------------------------------------
-| Run The Application
-|--------------------------------------------------------------------------
-|
-| Once we have the application, we can handle the incoming request
-| through the kernel, and send the associated response back to
-| the client's browser allowing them to enjoy the creative
-| and wonderful application we have prepared for them.
-|
-*/
+    return $view;
+};
 
-$kernel = $app->make('Illuminate\Contracts\Http\Kernel');
+// Inject dependencies into the application
+$app = new App($container);
 
-$response = $kernel->handle(
-	$request = Illuminate\Http\Request::capture()
-);
+// Home route
+$app->get('/', '\Controllers\HomeController:index');
 
-$response->send();
+// Job search routes
+$app->group('/search', function () {
 
-$kernel->terminate($request, $response);
+    $this->get('/indeed', '\Controllers\IndeedController:index');
+    $this->get('/govt', '\Controllers\GovtController:index');
+    $this->get('/dice', '\Controllers\DiceController:index');
+    $this->get('/careerbuilder', '\Controllers\CareerbuilderController:index');
+    $this->get('/ziprecruiter', '\Controllers\ZiprecruiterController:index');
+    $this->get('/simplyhired', '\Controllers\SimplyhiredController:index');
+    $this->get('/juju', '\Controllers\JujuController:index');
+    $this->get('/jobs2careers', '\Controllers\Jobs2careersController:index');
+    $this->get('/github', '\Controllers\GithubController:index');
+    $this->get('/careercast', '\Controllers\CareercastController:index');
+    $this->get('/muse', '\Controllers\MuseController:index');
+
+    return $response;
+});
+    
+$app->run();

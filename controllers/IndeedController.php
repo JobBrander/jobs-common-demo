@@ -32,7 +32,7 @@ class IndeedController extends BaseController
         // Send variables out to the view
         return $this->container->view->render($response, 'provider.html', [
             'provider' => 'Indeed',
-            'code_path' => 'karllhughes/jobs-common-demo/blob/v2/controllers/IndeedController.php',
+            'code_path' => 'karllhughes/jobs-common-demo/blob/master/controllers/IndeedController.php',
             'repository' => 'https://github.com/JobBrander/jobs-indeed',
             'results' => $jobs,
         ]);

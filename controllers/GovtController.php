@@ -29,7 +29,7 @@ class GovtController extends BaseController
         // Send variables out to the view
         return $this->container->view->render($response, 'provider.html', [
             'provider' => 'Govt',
-            'code_path' => 'karllhughes/jobs-common-demo/blob/v2/controllers/GovtController.php',
+            'code_path' => 'karllhughes/jobs-common-demo/blob/master/controllers/GovtController.php',
             'repository' => 'https://github.com/JobBrander/jobs-govt',
             'results' => $jobs,
         ]);

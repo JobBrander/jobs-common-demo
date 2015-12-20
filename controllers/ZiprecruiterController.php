@@ -31,7 +31,7 @@ class ZiprecruiterController extends BaseController
         // Send variables out to the view
         return $this->container->view->render($response, 'provider.html', [
             'provider' => 'Ziprecruiter',
-            'code_path' => 'karllhughes/jobs-common-demo/blob/v2/controllers/ZiprecruiterController.php',
+            'code_path' => 'karllhughes/jobs-common-demo/blob/master/controllers/ZiprecruiterController.php',
             'repository' => 'https://github.com/JobBrander/jobs-ziprecruiter',
             'results' => $jobs,
         ]);

@@ -29,7 +29,7 @@ class CareercastController extends BaseController
         // Send variables out to the view
         return $this->container->view->render($response, 'provider.html', [
             'provider' => 'Careercast',
-            'code_path' => 'karllhughes/jobs-common-demo/blob/v2/controllers/CareercastController.php',
+            'code_path' => 'karllhughes/jobs-common-demo/blob/master/controllers/CareercastController.php',
             'repository' => 'https://github.com/JobBrander/jobs-careercast',
             'results' => $jobs,
         ]);

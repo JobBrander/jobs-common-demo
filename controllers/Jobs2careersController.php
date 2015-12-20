@@ -32,7 +32,7 @@ class Jobs2careersController extends BaseController
         // Send variables out to the view
         return $this->container->view->render($response, 'provider.html', [
             'provider' => 'Jobs2careers',
-            'code_path' => 'karllhughes/jobs-common-demo/blob/v2/controllers/Jobs2careersController.php',
+            'code_path' => 'karllhughes/jobs-common-demo/blob/master/controllers/Jobs2careersController.php',
             'repository' => 'https://github.com/JobBrander/jobs-jobs2careers',
             'results' => $jobs,
         ]);

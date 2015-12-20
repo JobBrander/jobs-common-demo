@@ -31,7 +31,7 @@ class JujuController extends BaseController
         // Send variables out to the view
         return $this->container->view->render($response, 'provider.html', [
             'provider' => 'Juju',
-            'code_path' => 'karllhughes/jobs-common-demo/blob/v2/controllers/JujuController.php',
+            'code_path' => 'karllhughes/jobs-common-demo/blob/master/controllers/JujuController.php',
             'repository' => 'https://github.com/JobBrander/jobs-juju',
             'results' => $jobs,
         ]);

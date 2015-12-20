@@ -35,7 +35,7 @@ class SimplyhiredController extends BaseController
         // Send variables out to the view
         return $this->container->view->render($response, 'provider.html', [
             'provider' => 'Simplyhired',
-            'code_path' => 'karllhughes/jobs-common-demo/blob/v2/controllers/SimplyhiredController.php',
+            'code_path' => 'karllhughes/jobs-common-demo/blob/master/controllers/SimplyhiredController.php',
             'repository' => 'https://github.com/JobBrander/jobs-simplyhired',
             'results' => $jobs,
         ]);

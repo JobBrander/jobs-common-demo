@@ -29,7 +29,7 @@ class DiceController extends BaseController
         // Send variables out to the view
         return $this->container->view->render($response, 'provider.html', [
             'provider' => 'Dice',
-            'code_path' => 'karllhughes/jobs-common-demo/blob/v2/controllers/DiceController.php',
+            'code_path' => 'karllhughes/jobs-common-demo/blob/master/controllers/DiceController.php',
             'repository' => 'https://github.com/JobBrander/jobs-dice',
             'results' => $jobs,
         ]);

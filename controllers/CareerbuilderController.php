@@ -31,7 +31,7 @@ class CareerbuilderController extends BaseController
         // Send variables out to the view
         return $this->container->view->render($response, 'provider.html', [
             'provider' => 'Careerbuilder',
-            'code_path' => 'karllhughes/jobs-common-demo/blob/v2/controllers/CareerbuilderController.php',
+            'code_path' => 'karllhughes/jobs-common-demo/blob/master/controllers/CareerbuilderController.php',
             'repository' => 'https://github.com/JobBrander/jobs-careerbuilder',
             'results' => $jobs,
         ]);

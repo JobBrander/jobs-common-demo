@@ -29,7 +29,7 @@ class GithubController extends BaseController
         // Send variables out to the view
         return $this->container->view->render($response, 'provider.html', [
             'provider' => 'Github',
-            'code_path' => 'karllhughes/jobs-common-demo/blob/v2/controllers/GithubController.php',
+            'code_path' => 'karllhughes/jobs-common-demo/blob/master/controllers/GithubController.php',
             'repository' => 'https://github.com/JobBrander/jobs-github',
             'results' => $jobs,
         ]);

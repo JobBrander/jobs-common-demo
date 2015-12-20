@@ -29,7 +29,7 @@ class MuseController extends BaseController
         // Send variables out to the view
         return $this->container->view->render($response, 'provider.html', [
             'provider' => 'The Muse',
-            'code_path' => 'karllhughes/jobs-common-demo/blob/v2/controllers/MuseController.php',
+            'code_path' => 'karllhughes/jobs-common-demo/blob/master/controllers/MuseController.php',
             'repository' => 'https://github.com/JobBrander/jobs-muse',
             'results' => $jobs,
         ]);

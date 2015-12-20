@@ -10,8 +10,10 @@ use \Slim\Views\Twig;
 require '../vendor/autoload.php';
 
 // Load .env file for local dev
-$container['dotenv'] = new Dotenv(__DIR__.'/../');
-$container['dotenv']->load();
+if (file_exists(__DIR__.'/../.env')) {
+    $container['dotenv'] = new Dotenv(__DIR__.'/../');
+    $container['dotenv']->load();
+}
 
 // Register Twig views
 $container['view'] = function ($c) {

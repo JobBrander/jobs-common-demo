@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "abbb698144f8b733e84f0b88b1cbd098",
-    "content-hash": "c9bf9fcc5ac84773f3e5e895f1e66fa2",
+    "hash": "dd8b2daa11bb0139a6d72c5f103cfc32",
+    "content-hash": "7d885e1c1e5fadb82eb2f8b7bd7b3e83",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -33,6 +33,810 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "time": "2014-12-30 15:22:37"
+        },
+        {
+            "name": "guzzlehttp/guzzle",
+            "version": "6.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "c6851d6e48f63b69357cbfa55bca116448140e0c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/c6851d6e48f63b69357cbfa55bca116448140e0c",
+                "reference": "c6851d6e48f63b69357cbfa55bca116448140e0c",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/promises": "~1.0",
+                "guzzlehttp/psr7": "~1.1",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "~4.0",
+                "psr/log": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.1-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2015-11-23 00:47:50"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "b1e1c0d55f8083c71eda2c28c12a228d708294ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/b1e1c0d55f8083c71eda2c28c12a228d708294ea",
+                "reference": "b1e1c0d55f8083c71eda2c28c12a228d708294ea",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle promises library",
+            "keywords": [
+                "promise"
+            ],
+            "time": "2015-10-15 22:28:00"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "4d0bdbe1206df7440219ce14c972aa57cc5e4982"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/4d0bdbe1206df7440219ce14c972aa57cc5e4982",
+                "reference": "4d0bdbe1206df7440219ce14c972aa57cc5e4982",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "PSR-7 message implementation",
+            "keywords": [
+                "http",
+                "message",
+                "stream",
+                "uri"
+            ],
+            "time": "2015-11-03 01:34:55"
+        },
+        {
+            "name": "jobbrander/jobs-careerbuilder",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JobBrander/jobs-careerbuilder.git",
+                "reference": "106439fb9af882434fd9918a27744509372839c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JobBrander/jobs-careerbuilder/zipball/106439fb9af882434fd9918a27744509372839c1",
+                "reference": "106439fb9af882434fd9918a27744509372839c1",
+                "shasum": ""
+            },
+            "require": {
+                "jobbrander/jobs-common": "~1.0.3",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JobBrander\\Jobs\\Client\\Providers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Steven Maguire",
+                    "email": "stevenmaguire@gmail.com",
+                    "homepage": "https://github.com/stevenmaguire"
+                },
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with Careerbuilder Jobs API.",
+            "homepage": "https://github.com/JobBrander/jobs-careerbuilder",
+            "keywords": [
+                "api client",
+                "careerbuilder",
+                "jobs",
+                "object"
+            ],
+            "time": "2015-09-28 03:14:48"
+        },
+        {
+            "name": "jobbrander/jobs-careercast",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JobBrander/jobs-careercast.git",
+                "reference": "38242c28c10a7817174152e0bffae7d8b11f27eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JobBrander/jobs-careercast/zipball/38242c28c10a7817174152e0bffae7d8b11f27eb",
+                "reference": "38242c28c10a7817174152e0bffae7d8b11f27eb",
+                "shasum": ""
+            },
+            "require": {
+                "jobbrander/jobs-common": "~1.0.3",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JobBrander\\Jobs\\Client\\Providers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with Careercast's Jobs RSS feed.",
+            "homepage": "https://github.com/JobBrander/jobs-careercast",
+            "keywords": [
+                "api client",
+                "careercast",
+                "jobs",
+                "object",
+                "rss client"
+            ],
+            "time": "2015-10-20 02:19:58"
+        },
+        {
+            "name": "jobbrander/jobs-common",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JobBrander/jobs-common.git",
+                "reference": "19ab1d7127bdc0a7ff521683531f51237a5dae35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JobBrander/jobs-common/zipball/19ab1d7127bdc0a7ff521683531f51237a5dae35",
+                "reference": "19ab1d7127bdc0a7ff521683531f51237a5dae35",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~6.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "dunglas/php-schema": "0.4.*",
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JobBrander\\Jobs\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Steven Maguire",
+                    "email": "stevenmaguire@gmail.com",
+                    "homepage": "https://github.com/stevenmaguire"
+                },
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "http://www.karllhughes.com"
+                }
+            ],
+            "description": "Making it simple to integrate your application with job api providers.",
+            "homepage": "https://github.com/JobBrander/jobs-common",
+            "keywords": [
+                "api client",
+                "jobs",
+                "object"
+            ],
+            "time": "2015-10-28 17:19:54"
+        },
+        {
+            "name": "jobbrander/jobs-dice",
+            "version": "0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JobBrander/jobs-dice.git",
+                "reference": "e6502fe3f5295a43b8843fc03d8f3d2bf1bc074e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JobBrander/jobs-dice/zipball/e6502fe3f5295a43b8843fc03d8f3d2bf1bc074e",
+                "reference": "e6502fe3f5295a43b8843fc03d8f3d2bf1bc074e",
+                "shasum": ""
+            },
+            "require": {
+                "jobbrander/jobs-common": "~1.0.3",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JobBrander\\Jobs\\Client\\Providers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Steven Maguire",
+                    "email": "stevenmaguire@gmail.com",
+                    "homepage": "https://github.com/stevenmaguire"
+                },
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with Dice Jobs API.",
+            "homepage": "https://github.com/JobBrander/jobs-dice",
+            "keywords": [
+                "api client",
+                "dice",
+                "jobs",
+                "object"
+            ],
+            "time": "2015-09-28 21:42:33"
+        },
+        {
+            "name": "jobbrander/jobs-github",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JobBrander/jobs-github.git",
+                "reference": "6ea7cabd8c3fab1f923e1ec312a22361801c47fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JobBrander/jobs-github/zipball/6ea7cabd8c3fab1f923e1ec312a22361801c47fd",
+                "reference": "6ea7cabd8c3fab1f923e1ec312a22361801c47fd",
+                "shasum": ""
+            },
+            "require": {
+                "jobbrander/jobs-common": "~1.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JobBrander\\Jobs\\Client\\Providers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Steven Maguire",
+                    "email": "stevenmaguire@gmail.com",
+                    "homepage": "https://github.com/stevenmaguire"
+                }
+            ],
+            "description": "Making it simple to integrate your application with Github Jobs API.",
+            "homepage": "https://github.com/JobBrander/jobs-github",
+            "keywords": [
+                "api client",
+                "github",
+                "jobs",
+                "object"
+            ],
+            "time": "2015-09-01 19:08:31"
+        },
+        {
+            "name": "jobbrander/jobs-govt",
+            "version": "0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JobBrander/jobs-govt.git",
+                "reference": "fa5153e6bacfed7f06e43946c7a85fa1385f4ed1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JobBrander/jobs-govt/zipball/fa5153e6bacfed7f06e43946c7a85fa1385f4ed1",
+                "reference": "fa5153e6bacfed7f06e43946c7a85fa1385f4ed1",
+                "shasum": ""
+            },
+            "require": {
+                "jobbrander/jobs-common": "~1.0.3",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JobBrander\\Jobs\\Client\\Providers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Steven Maguire",
+                    "email": "stevenmaguire@gmail.com",
+                    "homepage": "https://github.com/stevenmaguire"
+                },
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with the Government Jobs API.",
+            "homepage": "https://github.com/JobBrander/jobs-govt",
+            "keywords": [
+                "api client",
+                "government jobs",
+                "jobs",
+                "object"
+            ],
+            "time": "2015-09-28 22:16:04"
+        },
+        {
+            "name": "jobbrander/jobs-indeed",
+            "version": "0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JobBrander/jobs-indeed.git",
+                "reference": "6cbf0d6518cd84fac11a6ab34131e306171f02d8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JobBrander/jobs-indeed/zipball/6cbf0d6518cd84fac11a6ab34131e306171f02d8",
+                "reference": "6cbf0d6518cd84fac11a6ab34131e306171f02d8",
+                "shasum": ""
+            },
+            "require": {
+                "jobbrander/jobs-common": "~1.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JobBrander\\Jobs\\Client\\Providers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Steven Maguire",
+                    "email": "stevenmaguire@gmail.com",
+                    "homepage": "https://github.com/stevenmaguire"
+                }
+            ],
+            "description": "Making it simple to integrate your application with Indeed Jobs API.",
+            "homepage": "https://github.com/JobBrander/jobs-indeed",
+            "keywords": [
+                "api client",
+                "indeed",
+                "jobs",
+                "object"
+            ],
+            "time": "2015-09-01 20:32:02"
+        },
+        {
+            "name": "jobbrander/jobs-jobs2careers",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JobBrander/jobs-jobs2careers.git",
+                "reference": "82e1ab785c7f43c788012262c45a921fb537213c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JobBrander/jobs-jobs2careers/zipball/82e1ab785c7f43c788012262c45a921fb537213c",
+                "reference": "82e1ab785c7f43c788012262c45a921fb537213c",
+                "shasum": ""
+            },
+            "require": {
+                "jobbrander/jobs-common": "~1.0.3",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JobBrander\\Jobs\\Client\\Providers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with the Jobs2Careers API.",
+            "homepage": "https://github.com/JobBrander/jobs-jobs2careers",
+            "keywords": [
+                "api client",
+                "jobs",
+                "jobs2careers",
+                "object"
+            ],
+            "time": "2015-10-15 21:18:52"
+        },
+        {
+            "name": "jobbrander/jobs-juju",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JobBrander/jobs-juju.git",
+                "reference": "c3752a9e17f62b3ca34d771d1ece86ab426ded9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JobBrander/jobs-juju/zipball/c3752a9e17f62b3ca34d771d1ece86ab426ded9a",
+                "reference": "c3752a9e17f62b3ca34d771d1ece86ab426ded9a",
+                "shasum": ""
+            },
+            "require": {
+                "jobbrander/jobs-common": "~1.0.3",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JobBrander\\Jobs\\Client\\Providers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with Juju Jobs API.",
+            "homepage": "https://github.com/JobBrander/jobs-juju",
+            "keywords": [
+                "api client",
+                "jobs",
+                "juju",
+                "object"
+            ],
+            "time": "2015-10-12 20:27:04"
+        },
+        {
+            "name": "jobbrander/jobs-muse",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JobBrander/jobs-muse.git",
+                "reference": "780a9092ca4975949824c5f6ae2efc0e98b056bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JobBrander/jobs-muse/zipball/780a9092ca4975949824c5f6ae2efc0e98b056bb",
+                "reference": "780a9092ca4975949824c5f6ae2efc0e98b056bb",
+                "shasum": ""
+            },
+            "require": {
+                "jobbrander/jobs-common": "~1.0.3",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JobBrander\\Jobs\\Client\\Providers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with Muse Jobs API.",
+            "homepage": "https://github.com/JobBrander/jobs-muse",
+            "keywords": [
+                "api client",
+                "jobs",
+                "muse",
+                "object",
+                "themuse.com"
+            ],
+            "time": "2015-10-15 23:20:37"
+        },
+        {
+            "name": "jobbrander/jobs-simplyhired",
+            "version": "0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JobBrander/jobs-simplyhired.git",
+                "reference": "04f9d48be8b5d8e88ee2e2e7210f335bf6451447"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JobBrander/jobs-simplyhired/zipball/04f9d48be8b5d8e88ee2e2e7210f335bf6451447",
+                "reference": "04f9d48be8b5d8e88ee2e2e7210f335bf6451447",
+                "shasum": ""
+            },
+            "require": {
+                "jobbrander/jobs-common": "~1.0.3",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JobBrander\\Jobs\\Client\\Providers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with SimplyHired Jobs API.",
+            "homepage": "https://github.com/JobBrander/jobs-simplyhired",
+            "keywords": [
+                "api client",
+                "jobs",
+                "object",
+                "simplyhired"
+            ],
+            "time": "2015-10-16 00:46:50"
+        },
+        {
+            "name": "jobbrander/jobs-ziprecruiter",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JobBrander/jobs-ziprecruiter.git",
+                "reference": "31795b0ee044a6aa9f69ec689307328c7e2b9f2d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JobBrander/jobs-ziprecruiter/zipball/31795b0ee044a6aa9f69ec689307328c7e2b9f2d",
+                "reference": "31795b0ee044a6aa9f69ec689307328c7e2b9f2d",
+                "shasum": ""
+            },
+            "require": {
+                "jobbrander/jobs-common": "~1.0.3",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.9.4",
+                "phpunit/php-code-coverage": "~2.0",
+                "phpunit/phpunit": ">=4.6",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JobBrander\\Jobs\\Client\\Providers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Karl Hughes",
+                    "email": "khughes.me@gmail.com",
+                    "homepage": "https://github.com/karllhughes"
+                }
+            ],
+            "description": "Making it simple to integrate your application with ZipRecruiter Jobs API.",
+            "homepage": "https://github.com/JobBrander/jobs-ziprecruiter",
+            "keywords": [
+                "api client",
+                "indeed",
+                "jobs",
+                "object"
+            ],
+            "time": "2015-10-15 23:55:44"
         },
         {
             "name": "nikic/fast-route",

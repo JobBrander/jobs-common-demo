@@ -1,6 +1,17 @@
 {
     "require": {
         "slim/slim": "^3.0",
-        "vlucas/phpdotenv": "^2.1"
+        "vlucas/phpdotenv": "^2.1",
+        "jobbrander/jobs-indeed": "^0.4.0",
+        "jobbrander/jobs-govt": "^0.6.0",
+        "jobbrander/jobs-dice": "^0.3.0",
+        "jobbrander/jobs-careerbuilder": "^1.0",
+        "jobbrander/jobs-ziprecruiter": "^0.2.0",
+        "jobbrander/jobs-simplyhired": "^0.4.0",
+        "jobbrander/jobs-juju": "^1.0",
+        "jobbrander/jobs-jobs2careers": "^1.1",
+        "jobbrander/jobs-github": "^0.1.1",
+        "jobbrander/jobs-careercast": "^0.2.0",
+        "jobbrander/jobs-muse": "^0.2.0"
     }
 }

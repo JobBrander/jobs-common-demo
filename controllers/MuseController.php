@@ -2,19 +2,18 @@
 
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
-use \Dotenv\Dotenv;
 
 class MuseController
 {
-    public function __construct()
+    public function __construct($container)
     {
-        $dotenv = new Dotenv('../');
-        $dotenv->load();
-        print_r($dotenv); exit;
+        $this->container = $container;
     }
 
     public function index(Request $request, Response $response)
     {
-        echo "TEST"; exit;
+        // Get env to get .env variables
+        echo getenv('XXX'); exit;
+        return $response->getBody()->write("Muse job listings");
     }
 }

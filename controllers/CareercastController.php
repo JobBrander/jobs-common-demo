@@ -1,18 +1,15 @@
 <?php namespace Controllers;
 
-use \JobBrander\Jobs\Client\Providers\J2c;
+use \JobBrander\Jobs\Client\Providers\Careercast;
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 
-class Jobs2careersController extends BaseController
+class CareercastController extends BaseController
 {
     public function index(Request $request, Response $response)
     {
         $jobs = [];
-        $client = new J2c([
-            'id' => getenv('J2C_ID'),
-            'pass' => getenv('J2C_PASSWORD'),
-        ]);
+        $client = new Careercast;
 
         // Get the results from the API client
         $results = $client->setKeyword('education')->getJobs();
@@ -31,9 +28,9 @@ class Jobs2careersController extends BaseController
 
         // Send variables out to the view
         return $this->container->view->render($response, 'provider.html', [
-            'provider' => 'Jobs2careers',
-            'code_path' => 'karllhughes/jobs-common-demo/blob/v2/controllers/Jobs2careersController.php',
-            'repository' => 'https://github.com/JobBrander/jobs-jobs2careers',
+            'provider' => 'Careercast',
+            'code_path' => 'karllhughes/jobs-common-demo/blob/v2/controllers/CareercastController.php',
+            'repository' => 'https://github.com/JobBrander/jobs-careercast',
             'results' => $jobs,
         ]);
     }

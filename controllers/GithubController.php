@@ -1,18 +1,15 @@
 <?php namespace Controllers;
 
-use \JobBrander\Jobs\Client\Providers\J2c;
+use \JobBrander\Jobs\Client\Providers\Github;
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 
-class Jobs2careersController extends BaseController
+class GithubController extends BaseController
 {
     public function index(Request $request, Response $response)
     {
         $jobs = [];
-        $client = new J2c([
-            'id' => getenv('J2C_ID'),
-            'pass' => getenv('J2C_PASSWORD'),
-        ]);
+        $client = new Github;
 
         // Get the results from the API client
         $results = $client->setKeyword('education')->getJobs();
@@ -23,7 +20,7 @@ class Jobs2careersController extends BaseController
         // Loop through, set up array of jobs for the table
         foreach ($results->all() as $result) {
             $jobs[] = [
-                'title' => $result->getTitle(),
+                'title' => $result->getName(),
                 'company' => $result->getCompanyName(),
                 'url' => $result->getUrl(),
             ];
@@ -31,9 +28,9 @@ class Jobs2careersController extends BaseController
 
         // Send variables out to the view
         return $this->container->view->render($response, 'provider.html', [
-            'provider' => 'Jobs2careers',
-            'code_path' => 'karllhughes/jobs-common-demo/blob/v2/controllers/Jobs2careersController.php',
-            'repository' => 'https://github.com/JobBrander/jobs-jobs2careers',
+            'provider' => 'Github',
+            'code_path' => 'karllhughes/jobs-common-demo/blob/v2/controllers/GithubController.php',
+            'repository' => 'https://github.com/JobBrander/jobs-github',
             'results' => $jobs,
         ]);
     }

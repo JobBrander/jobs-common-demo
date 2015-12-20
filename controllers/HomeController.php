@@ -3,9 +3,8 @@
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 
-class HomeController
+class HomeController extends BaseController
 {
-
     public function index(Request $request, Response $response)
     {
         $providers = [
@@ -22,8 +21,8 @@ class HomeController
             'muse',
         ];
 
-        $response->getBody()->write("Select a job provider to demo:");
-
-        return $response;
+        return $this->container->view->render($response, 'index.html', [
+            'providers' => $providers
+        ]);
     }
 }

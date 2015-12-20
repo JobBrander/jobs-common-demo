@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="row">
+  <div class="large-12 columns">
+      <h3>
+          Select a Provider
+      </h3>
+      <ul>
+          {% for provider in providers %}
+              <li><a href="/search/{{ provider }}">{{ provider }}</a></li>
+          {% endfor %}
+      </ul>
+  </div>
+</div>
+{% endblock %}

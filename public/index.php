@@ -25,6 +25,7 @@ $container['view'] = function ($c) {
     return $view;
 };
 
+// Inject dependencies into the application
 $app = new App($container);
 
 // Home route

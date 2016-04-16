@@ -18,7 +18,7 @@ if (file_exists(__DIR__.'/../.env')) {
 // Register Twig views
 $container['view'] = function ($c) {
     $view = new Twig('./views', ['cache' => false]);
-    
+
     $view->addExtension(new \Slim\Views\TwigExtension(
         $c['router'],
         $c['request']->getUri()
@@ -35,7 +35,6 @@ $app->get('/', '\Controllers\HomeController:index');
 
 // Job search routes
 $app->group('/search', function () {
-
     $this->get('/indeed', '\Controllers\IndeedController:index');
     $this->get('/govt', '\Controllers\GovtController:index');
     $this->get('/dice', '\Controllers\DiceController:index');
@@ -47,8 +46,6 @@ $app->group('/search', function () {
     $this->get('/github', '\Controllers\GithubController:index');
     $this->get('/careercast', '\Controllers\CareercastController:index');
     $this->get('/muse', '\Controllers\MuseController:index');
-
-    return $response;
 });
-    
+
 $app->run();

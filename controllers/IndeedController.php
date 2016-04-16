@@ -19,7 +19,7 @@ class IndeedController extends BaseController
 
         // See all available fields by dumping the results variable
         // var_dump($results->all());
-        
+
         // Loop through, set up array of jobs for the table
         foreach ($results->all() as $result) {
             $jobs[] = [

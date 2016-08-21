@@ -1,7 +1,8 @@
-# JobBrander [Jobs Common](http://code.jobbrander.com/) Demo
+# Job Board API Demo
 
-This project serves as an example of incorporating several of 
-JobBrander's job board api clients into a PHP project. This
+This project serves as an example of incorporating several of the
+[Jobs Common](https://github.com/JobBrander/jobs-common) 
+job board api clients into a PHP project. This
 demo uses the [Slim](http://www.slimframework.com/) Framework, 
 but the concepts should hold true in any project using 
 [Composer](https://getcomposer.org/) to manage dependencies.
@@ -12,11 +13,11 @@ It's an open source attempt at standardizing the responses
 given by job board APIs in PHP. In other words, it provides
 a simple interface for getting jobs from job boards.
 
-[Read more about the project here](http://code.jobbrander.com/)
+[Read more about the project here](http://www.jobapis.com/)
 
 ## Getting started with this project
 
-#### 1. Clone the repo
+1. Clone the repo
 
 #### 2. Configure Apache/Nginx to serve the `/public` directory
 

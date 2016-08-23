@@ -17,15 +17,11 @@ a simple interface for getting jobs from job boards.
 
 ## Getting started with this project
 
-1. Clone the repo
-
-#### 2. Configure Apache/Nginx to serve the `/public` directory
-
-#### 3. Add a .env file
-
-#### 4. Try it out
+1. Clone the repo: `git clone https://github.com/JobBrander/jobs-common-demo.git`.
+2. Copy the `.env.example` file, rename it `.env`, and add API Keys for each job board listed.
+3. Install the composer dependencies: `composer install`.
+4. Run `php -S localhost:8000 -t public` to serve the application.
+5. Visit the demo application at `http://localhost:8000/`.
 
 ## Contributing
-
-If you spot a problem or would like to improve this demo application, 
-submit a pull request.
+If you spot a problem or would like to improve this demo application, [submit a pull request](https://github.com/JobBrander/jobs-common-demo/pulls).

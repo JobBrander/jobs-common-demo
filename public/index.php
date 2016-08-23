@@ -1,10 +1,7 @@
 <?php
 
 use \Dotenv\Dotenv;
-use \Psr\Http\Message\ServerRequestInterface as Request;
-use \Psr\Http\Message\ResponseInterface as Response;
 use \Slim\App;
-use \Slim\Container;
 use \Slim\Views\Twig;
 
 require '../vendor/autoload.php';

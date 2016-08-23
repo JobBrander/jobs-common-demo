@@ -16,9 +16,6 @@ class CareerbuilderController extends BaseController
         // Get the results from the API client
         $results = $client->setKeyword('education')->getJobs();
 
-        // See all available fields by dumping the results variable
-        // var_dump($results->all());
-        
         // Loop through, set up array of jobs for the table
         foreach ($results->all() as $result) {
             $jobs[] = [
@@ -31,7 +28,6 @@ class CareerbuilderController extends BaseController
         // Send variables out to the view
         return $this->container->view->render($response, 'provider.html', [
             'provider' => 'Careerbuilder',
-            'code_path' => 'karllhughes/jobs-common-demo/blob/master/controllers/CareerbuilderController.php',
             'repository' => 'https://github.com/JobBrander/jobs-careerbuilder',
             'results' => $jobs,
         ]);

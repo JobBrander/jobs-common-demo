@@ -1,18 +1,23 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="row">
-    <div class="medium-10 medium-offset-1 columns">
-        <h3>Select a provider</h3>
+    <div class="medium-8 medium-offset-2 columns">
+        <h3>Search for jobs</h3>
         <p>
-            Each provider will connect you with one job board's API, 
-            show you the code it's using, and show you a summary of
-            the results given by the job board's API.
+            Select a provider and enter a search term. We'll go to the API
+            you requested and get the latest job listings.
         </p>
-        <ul>
-          {% for provider in providers %}
-              <li><a href="/search/{{ provider }}">{{ provider }}</a></li>
-          {% endfor %}
-        </ul>
+        <form action="search" method="get">
+            <label for="provider">Select a job board</label>
+            <select name="provider">
+              {% for provider in providers %}
+                  <option>{{ provider }}</option>
+              {% endfor %}
+            </select>
+            <label for="keyword">Enter a search term</label>
+            <input type="text" value="" placeholder="eg: engineering"/>
+            <input type="submit" value="Search"/>
+        </form>
     </div>
 </div>
 {% endblock %}

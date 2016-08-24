@@ -1,18 +1,18 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="row">
-    <div class="medium-10 medium-offset-1 columns">
+    <div class="medium-8 medium-offset-2 columns">
         <h3>Getting jobs from {{ provider }}</h3>
         <p>
-            Connected to {{ provider }}'s API using JobBrander's
+            Connected to {{ provider }}'s API using the
             <a href="{{ repository }}" target="_blank">{{ provider }} PHP API Client</a>.
-            Scroll down to see <a href="#results">the job listings</a> returned.
+            Below is a sampling of the job listings returned.
         </p>
 
         <h4 id="results">Results</h4>
         <table>
             <tr>
-                <th>Title</th>
+                <th>Job Listing</th>
                 <th>Company</th>
                 <th>Link</th>
             </tr>
@@ -20,7 +20,7 @@
             <tr>
                 <td>{{ result['title'] }}</td>
                 <td>{{ result['company'] }}</td>
-                <td><a href="{{ result['url'] }}" target="_blank">{{ result['url'] }}</a></td>
+                <td><a href="{{ result['url'] }}" target="_blank">Link</a></td>
             </tr>
             {% endfor %}
         </table>

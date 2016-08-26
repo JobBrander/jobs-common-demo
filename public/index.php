@@ -3,6 +3,8 @@
 use \Dotenv\Dotenv;
 use \Slim\App;
 use \Slim\Views\Twig;
+use \Psr\Http\Message\ServerRequestInterface as Request;
+use \Psr\Http\Message\ResponseInterface as Response;
 
 require '../vendor/autoload.php';
 
@@ -32,6 +34,14 @@ $app->get('/', '\Controllers\HomeController:index');
 
 // Job search routes
 $app->group('/search', function () {
+    $this->get('', function (Request $request, Response $response)
+        {
+            $query = $request->getQueryParams();
+            return $response->withRedirect(
+                '/search/'.$query['provider'].'?keyword='.$query['keyword']
+            );
+        }
+    );
     $this->get('/indeed', '\Controllers\IndeedController:index');
     $this->get('/govt', '\Controllers\GovtController:index');
     $this->get('/dice', '\Controllers\DiceController:index');

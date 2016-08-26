@@ -12,12 +12,14 @@
         <h4 id="results">Results</h4>
         <table>
             <tr>
+                <th>Date</th>
                 <th>Job Listing</th>
                 <th>Company</th>
                 <th>Link</th>
             </tr>
             {% for result in results %}
             <tr>
+                <td>{{ result['date'] }}</td>
                 <td>{{ result['title'] }}</td>
                 <td>{{ result['company'] }}</td>
                 <td><a href="{{ result['url'] }}" target="_blank">Link</a></td>

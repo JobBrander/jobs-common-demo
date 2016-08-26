@@ -14,17 +14,14 @@ class HomeController
     public function index(Request $request, Response $response)
     {
         $providers = [
-            'indeed',
-            'govt',
-            'dice',
             'careerbuilder',
-            'ziprecruiter',
-            'simplyhired',
-            'juju',
-            'jobs2careers',
-            'github',
             'careercast',
-            'muse',
+            'dice',
+            'github',
+            'govt',
+            'indeed',
+            'juju',
+            'ziprecruiter',
         ];
 
         return $this->container->view->render($response, 'index.html', [

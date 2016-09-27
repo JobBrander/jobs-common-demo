@@ -1,5 +1,7 @@
 # Job Board API Demo
 
+WARNING: This application uses non-supported versions of the Jobs Common API clients and it is no longer updated. Please visit [JobApis.com](http://www.jobapis.com/) for other example code and projects.
+
 This project serves as an example of incorporating several of the
 [Jobs Common](https://github.com/JobBrander/jobs-common) 
 job board api clients into a PHP project. This
@@ -22,6 +24,3 @@ a simple interface for getting jobs from job boards.
 3. Install the composer dependencies: `composer install`.
 4. Run `php -S localhost:8000 -t public` to serve the application.
 5. Visit the demo application at `http://localhost:8000/`.
-
-## Contributing
-If you spot a problem or would like to improve this demo application, [submit a pull request](https://github.com/JobBrander/jobs-common-demo/pulls).
